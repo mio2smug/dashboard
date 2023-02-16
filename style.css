@@ -7,12 +7,21 @@ body, html{
     height: inherit;
     width: inherit;
     display: grid;
-    grid-template-rows: 100% 25%;
+    grid-template-rows: 100% 0;
     grid-template-columns: 20.0% auto;
     gap: 0px;
     border: 1px solid black;
   }
 
-  .container > div{
-    border: 1px solid blue;
-  }
+    .container > div{
+      border: 1px solid blue;
+    }
+  
+    .subcontainer{
+      display: grid;
+      grid-template-rows: 21% auto;   
+    }
+
+      .subcontainer > div {
+        border: 1px solid blue; 
+      }
