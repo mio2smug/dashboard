@@ -29,9 +29,9 @@ body, html{
     grid-template-rows: 21% 79%;
   }
 
-    .rightside > div{
-      border: 1px solid red;
-    }
+  .rightside > div{
+    border: 1px solid red;
+  }
 
     .rightside--header{
       background-color: #FFFFFF;
