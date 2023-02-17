@@ -33,6 +33,14 @@ body, html{
     grid-template-rows: 21% 79%;   
   }
 
+  #avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  /*end headbar properties*/
+
       .content--subcontainer {
         background-color: #E2E8F0;
         /* box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2); */
