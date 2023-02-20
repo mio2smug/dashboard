@@ -208,7 +208,7 @@ body, html{
         grid-auto-rows: 5%;
         grid-auto-columns:4%; 
         overflow: auto;
-        gap: 15px;
+        gap: 8px;
       }
 
         #content--textbox--projects{
@@ -229,6 +229,33 @@ body, html{
           font-size: large;
           font-weight: 500;
         }
+          #announcements--tab{
+            grid-area: 2/19/12/24;
+            background-color: white;
+            border-radius: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .announcements--dividers{
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              height: 33%;
+              width: 80%;
+              margin-top: 1rem;
+              padding-left: 10%;
+            }
+          
+            .announcements--dividers > h1{
+              font-weight: 600;
+            }
+
+            .announcements--dividers > p{
+              font-weight: 400;
+              font-size: medium;
+            }
 
         #content--textbook--trending{
           display: flex;
@@ -239,6 +266,24 @@ body, html{
           font-size: large;
           font-weight: 500;
         }
+          #trending--tab{
+            grid-area: 13/19/24/24;
+            background-color: white;
+            border-radius: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+            #trending--tab > div{
+              border: 1px solid black;
+            }
+
+            .trending--tab--dividers{
+              min-height: 25%;
+              width: 80%
+            }
 
         .card1{
           grid-area:2/1/8/10;
@@ -276,14 +321,6 @@ body, html{
           border-radius: 20px;
         }
 
-        .card7{
-          grid-area: 2/19/12/25;
-        }
-
-        .card8{
-          grid-area: 13/19/24/25;
-        }
-
           .card--border{
             background-color: orange;
             width: 3%;
@@ -317,6 +354,7 @@ body, html{
               display: flex;
               flex-direction: row;
               justify-content: flex-end;
+              gap:5px;
             }
       
               .card--icon--wrapper > svg{
