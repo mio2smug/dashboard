@@ -10,10 +10,6 @@ body, html{
   grid-template-rows: 100% 0%;
   grid-template-columns: 20% 80%;
 }
-
-.container > div{ 
-  border: 1px solid black;
-}
   
   /*Left side of our page properties start*/
   .leftside{
@@ -37,68 +33,101 @@ body, html{
     grid-template-rows: 21% 79%;
   }
 
-  .rightside > div{
-    /* border: 1px solid red; */
-  }
-
     .rightside--headbar{
       display: flex;
       flex-direction: row;
-      background-color: #FFFFFF;
-    }
-
-    .rightside--headbar > div{
-      border: 1px solid black;
-    }
-
-    .headbar--elements--right, .headbar--elements--left{
-      width: 50%;
-      display: grid;
+      background-color: #FAF9F6;
     }
 
     .headbar--elements--left{
+      width: 75%;
+      display: grid;
       grid-template-rows: 25% 75%;
     }
 
-    .headbar--elements--left > div{
-      border: 1px solid brown;
-    }
+      .searchbox--container{
+        display: flex;
+        align-items: center;
+      }
 
-      .headbar--buttons{
+        #search{
+          margin-top: 5px;
+          margin-left: 5%; 
+          flex: 1;
+          width: 70%;
+          border-radius: 20px;
+          border: none;
+          background-color: #d0ebf7;
+          height: 1.5rem;
+        }
+
+        /* #search:hover{
+          background-color: white;
+        }  */
+
+      .avatar--blurb--separator{
         display: flex;
         flex-direction: row;
-        align-items: flex-end;
-        gap: 15px ;
       }
-
-        #headbarbuttons{
-          border-radius: 20px;
-          background-color: #1992D4;
-          color: white;
-          border: none;
-          height: 2rem;
-          width: 6rem;
-          font-weight: bold;
-          font-size: medium;
+      
+        .avatar--container--large{
+          width: 33%
         }
 
-      #avatarlarge{
-        height: 5rem;
-        width: 5rem;
-        border-radius: 50%;
-      }
+          #avatarlarge{
+            height: 66px;
+            width: 66px;
+            border-radius: 50%;
+            padding: 1rem 0 0 2.5rem;
+          }
 
-      #avatarsmall{
-        height: 33px;
-        width: 33px;
-        border-radius: 50%;
-      }
-
-        h1{
-          font-size: xx-small;
+        .text--container--welcome{
+          width: 66%; 
         }
 
+          .text--container--welcome > p{
+            margin: 1rem 0 0 15px; 
+            padding-left: 10px;
+          }
 
+            .welcome{
+              font-size: x-small;
+            }
+
+
+      .headbar--elements--right{
+        width: 25%;
+      } 
+      
+        .headbar--buttons{
+          display: flex;
+          flex-direction: row;
+          align-items: flex-end;
+          gap: 15px ;
+        }
+      
+          #headbarbuttons{
+            border-radius: 20px;
+            background-color: #1992D4;
+            color: white;
+            border: none;
+            height: 2rem;
+            width: 6rem;
+            font-weight: bold;
+            font-size: medium;
+          }
+        
+        #avatarsmall{
+          height: 33px;
+          width: 33px;
+          border-radius: 50%;
+        }
+      
+          h1{
+            font-size: xx-small;
+          }
+        
+        
     .rightside--content{
       background-color: #E2E8F0;
     }
