@@ -51,6 +51,10 @@ body, html{
       border: 1px solid black;
     }
 
+    .headbar--elements--right, .headbar--elements--left{
+      width: 50%;
+    }
+
       .headbar--buttons{
         display: flex;
         flex-direction: row;
