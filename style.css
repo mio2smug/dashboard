@@ -53,6 +53,8 @@ body, html{
 
     .headbar--elements--right, .headbar--elements--left{
       width: 50%;
+      display: flex;
+      flex-direction: column;
     }
 
       .headbar--buttons{
