@@ -40,9 +40,9 @@ body, html{
     }
 
     .headbar--elements--left{
-      width: 75%;
+      width: 70%;
       display: grid;
-      grid-template-rows: 25% 75%;
+      grid-template-rows: 33% 66%;
     }
 
       .searchbox--container{
@@ -51,10 +51,10 @@ body, html{
       }
 
         #search{
-          margin-top: 5px;
+          margin-top: 1rem;
           margin-left: 5%; 
           flex: 1;
-          width: 70%;
+          min-width: 70%;
           border-radius: 20px;
           border: none;
           background-color: #d0ebf7;
@@ -71,7 +71,7 @@ body, html{
       }
       
         .avatar--container--large{
-          width: 33%
+          width: 25%
         }
 
           #avatarlarge{
@@ -82,28 +82,49 @@ body, html{
           }
 
         .text--container--welcome{
-          width: 66%; 
+          width: 75%; 
         }
 
           .text--container--welcome > p{
             margin: 1rem 0 0 15px; 
-            padding-left: 10px;
+            padding-left: 5px;
           }
 
             .welcome{
-              font-size: x-small;
+              font-size: small;
+            }
+
+            .username{
+              font-size: x-large;
             }
 
 
       .headbar--elements--right{
-        width: 25%;
+        width: 30%;
+        display: grid;
+        grid-template-rows: 33% 66%;
+
       } 
-      
+
+        .headbar--icon--wrapper{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
+        .headbar--symbol--wrapper{
+          font-size: xx-small;
+        }
+
+        .headbar--icon--wrapper > div{
+          border: 1px solid black;
+        }
+
         .headbar--buttons{
           display: flex;
           flex-direction: row;
           align-items: flex-end;
-          gap: 15px ;
+          gap: 5px ;
         }
       
           #headbarbuttons{
@@ -126,7 +147,7 @@ body, html{
           h1{
             font-size: xx-small;
           }
-        
+    
         
     .rightside--content{
       background-color: #E2E8F0;
