@@ -103,27 +103,35 @@ body, html{
         width: 30%;
         display: grid;
         grid-template-rows: 33% 66%;
-
+        margin-top: 1rem;
       } 
 
         .headbar--icon--wrapper{
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
+          justify-content: space-evenly;
         }
 
-        .headbar--symbol--wrapper{
-          font-size: xx-small;
-        }
+          .headbar--symbol--wrapper{
+            display: flex;
+            font-size: xx-small;
+            align-items: center;
+          }
 
-        .headbar--icon--wrapper > div{
-          border: 1px solid black;
-        }
+          .headbar--name--wrapper{
+            display: flex;
+            align-items: center;
+          }
+
+            .headbar--name--wrapper > p{
+              font-size: medium;
+            }
 
         .headbar--buttons{
           display: flex;
           flex-direction: row;
-          align-items: flex-end;
+          align-items: center;
           gap: 5px ;
         }
       
