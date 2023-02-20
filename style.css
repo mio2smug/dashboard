@@ -62,6 +62,8 @@ body, html{
       display: flex;
       flex-direction: row;
       background-color: #FAF9F6;
+      /* box-shadow: 1rem 1rem 1rem 1rem #888888; */
+      
     }
 
     .headbar--elements--left{
@@ -193,6 +195,9 @@ body, html{
         
     .rightside--content{
       background-color: #E2E8F0;
+      /* box-shadow: 0px -25px 1px 1px;
+      z-index: -1; */
+      
     }
   
   /*Right side of our page properties end*/
