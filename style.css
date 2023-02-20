@@ -232,8 +232,14 @@ body, html{
           font-weight: 500;
         }
 
-        #content--textbook-trending{
-          grid-area: ;
+        #content--textbook--trending{
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          padding-left: 1rem;
+          grid-area: 12/19/13/23;
+          font-size: large;
+          font-weight: 500;
         }
 
         .card1{
@@ -258,6 +264,14 @@ body, html{
 
         .card6{
           grid-area: 16/10/22/19;
+        }
+
+        .card7{
+          grid-area: 2/19/12/25;
+        }
+
+        .card8{
+          grid-area: 13/19/24/25;
         }
 
   
