@@ -17,12 +17,37 @@ body, html{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    color: white;
   }
 
-    .leftside--sidebar--links{
-      color: white;
-    
+    .linkwrapper--large, .linkwrapper--small{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
     }
+
+      .linkwrapper--large > p{
+        font-size: x-large;
+      }
+
+        #icon--large{
+          height: 50px;
+          width: 50px;
+        }
+
+      .linkwrapper--small > P{
+        font-size: small;
+        font-weight: 500;
+      }
+
+        .linkwrapper--small > svg{
+            height: 25px;
+            width: 25px;
+        }
+
+
+
 
   /*Left side of our page properties end*/
   
