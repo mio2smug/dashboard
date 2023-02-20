@@ -206,6 +206,8 @@ body, html{
         display: grid;
         grid-template-columns: repeat(25, 4%);
         grid-template-rows: repeat(20, 5%);
+        grid-auto-rows: 5%;
+        grid-auto-columns:4%; 
         overflow: auto;
       }
         .content--container>div{
@@ -229,6 +231,35 @@ body, html{
           font-size: large;
           font-weight: 500;
         }
+
+        #content--textbook-trending{
+          grid-area: ;
+        }
+
+        .card1{
+          grid-area:2/1/8/10;
+        }
+
+        .card2{
+          grid-area: 2/10/8/19;
+        }
+
+        .card3{
+          grid-area: 9/1/15/10;
+        }
+
+        .card4{
+          grid-area: 9/10/15/19;
+        }
+
+        .card5{
+          grid-area: 16/1/22/10;
+        }
+
+        .card6{
+          grid-area: 16/10/22/19;
+        }
+
   
   /*Right side of our page properties end*/
 
