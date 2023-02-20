@@ -208,6 +208,7 @@ body, html{
         grid-auto-rows: 5%;
         grid-auto-columns:4%; 
         overflow: auto;
+        gap: 15px;
       }
 
         #content--textbox--projects{
