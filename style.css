@@ -75,6 +75,11 @@ body, html{
         align-items: center;
       }
 
+        #searchicon{
+          height: 30px;
+          width: 30px;
+        }
+
         #search{
           margin-top: 1rem;
           margin-left: 5%; 
@@ -140,15 +145,24 @@ body, html{
 
           .headbar--symbol--wrapper{
             display: flex;
-            font-size: xx-small;
             align-items: center;
           }
 
-          #avatarsmall{
-            height: 33px;
-            width: 33px;
-            border-radius: 50%;
+            .headbar--symbol--wrapper > svg{
+              height: 30px;
+              width: 30px
+            }
+
+          .avatar--container--small{
+            display: flex;
+            align-items: center;
           }
+
+            #avatarsmall{
+              height: 33px;
+              width: 33px;
+              border-radius: 50%;
+            }
 
           .headbar--name--wrapper{
             display: flex;
