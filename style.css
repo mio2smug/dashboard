@@ -1,392 +1,387 @@
-body, html{
+body,
+html {
   height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* Page container start */
-.container{
+.container {
   height: inherit;
   display: grid;
   grid-template-rows: 100% 0%;
   grid-template-columns: 20% 80%;
 }
-  
-  /*Left side of our page properties start*/
-  .leftside{
-    background-color: #1992D4;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: white;
-  }
 
-    .linkwrapper--large, .linkwrapper--small{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 1rem;
-    }
+/*Left side of our page properties start*/
+.leftside {
+  background-color: #1992d4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+}
 
-      .linkwrapper--large > p{
-        font-size: x-large;
-      }
+.linkwrapper--large,
+.linkwrapper--small {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
 
-        #icon--large{
-          height: 50px;
-          width: 50px;
-        }
+.linkwrapper--large > p {
+  font-size: x-large;
+}
 
-      .linkwrapper--small > P{
-        font-size: small;
-        font-weight: 500;
-      }
+#icon--large {
+  height: 50px;
+  width: 50px;
+}
 
-        .linkwrapper--small > svg{
-            height: 25px;
-            width: 25px;
-        }
+.linkwrapper--small > P {
+  font-size: small;
+  font-weight: 500;
+}
 
+.linkwrapper--small > svg {
+  height: 25px;
+  width: 25px;
+}
 
+/*Left side of our page properties end*/
 
+/*Right side of our page properties start*/
+.rightside {
+  display: grid;
+  grid-template-columns: 100!;
+  grid-template-rows: 21% 79%;
+}
 
-  /*Left side of our page properties end*/
-  
-  /*Right side of our page properties start*/
-  .rightside{
-    display: grid;
-    grid-template-columns: 100!;
-    grid-template-rows: 21% 79%;
-  }
+.rightside--headbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #faf9f6;
+  /* box-shadow: 1rem 1rem 1rem 1rem #888888; */
+}
 
-    .rightside--headbar{
-      display: flex;
-      flex-direction: row;
-      background-color: #FAF9F6;
-      /* box-shadow: 1rem 1rem 1rem 1rem #888888; */
-      
-    }
+.headbar--elements--left {
+  width: 70%;
+  display: grid;
+  grid-template-rows: 33% 66%;
+}
 
-    .headbar--elements--left{
-      width: 70%;
-      display: grid;
-      grid-template-rows: 33% 66%;
-    }
+.searchbox--container {
+  display: flex;
+  align-items: center;
+}
 
-      .searchbox--container{
-        display: flex;
-        align-items: center;
-      }
+#searchicon {
+  height: 30px;
+  width: 30px;
+}
 
-        #searchicon{
-          height: 30px;
-          width: 30px;
-        }
+#search {
+  margin-top: 1rem;
+  margin-left: 5%;
+  flex: 1;
+  min-width: 70%;
+  border-radius: 20px;
+  border: none;
+  background-color: #e2e8f0;
+  height: 1.5rem;
+}
 
-        #search{
-          margin-top: 1rem;
-          margin-left: 5%; 
-          flex: 1;
-          min-width: 70%;
-          border-radius: 20px;
-          border: none;
-          background-color: #E2E8F0;
-          height: 1.5rem;
-        }
-
-        /* #search:hover{
+/* #search:hover{
           background-color: white;
         }  */
 
-      .avatar--blurb--separator{
-        display: flex;
-        flex-direction: row;
-      }
-      
-        .avatar--container--large{
-          width: 25%
-        }
+.avatar--blurb--separator {
+  display: flex;
+  flex-direction: row;
+}
 
-          #avatarlarge{
-            height: 66px;
-            width: 66px;
-            border-radius: 50%;
-            padding: 1rem 0rem 0rem 2.5rem;
-          }
+.avatar--container--large {
+  width: 25%;
+}
 
-        .text--container--welcome{
-          width: 75%; 
-        }
+#avatarlarge {
+  height: 66px;
+  width: 66px;
+  border-radius: 50%;
+  padding: 1rem 0rem 0rem 2.5rem;
+}
 
-          .text--container--welcome > p{
-            margin: 1rem 0 0 15px; 
-            padding-left: 5px;
-          }
+.text--container--welcome {
+  width: 75%;
+}
 
-            .welcome{
-              font-size: small;
-            }
+.text--container--welcome > p {
+  margin: 1rem 0 0 15px;
+  padding-left: 5px;
+}
 
-            .username{
-              font-size: x-large;
-            }
+.welcome {
+  font-size: small;
+}
 
+.username {
+  font-size: x-large;
+}
 
-      .headbar--elements--right{
-        width: 30%;
-        display: grid;
-        grid-template-rows: 33% 66%;
-        margin-top: 1rem;
-      } 
+.headbar--elements--right {
+  width: 30%;
+  display: grid;
+  grid-template-rows: 33% 66%;
+  margin-top: 1rem;
+}
 
-        .headbar--icon--wrapper{
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-        }
+.headbar--icon--wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
-          .headbar--symbol--wrapper{
-            display: flex;
-            align-items: center;
-          }
+.headbar--symbol--wrapper {
+  display: flex;
+  align-items: center;
+}
 
-            .headbar--symbol--wrapper > svg{
-              height: 30px;
-              width: 30px
-            }
+.headbar--symbol--wrapper > svg {
+  height: 30px;
+  width: 30px;
+}
 
-          .avatar--container--small{
-            display: flex;
-            align-items: center;
-          }
+.avatar--container--small {
+  display: flex;
+  align-items: center;
+}
 
-            #avatarsmall{
-              height: 33px;
-              width: 33px;
-              border-radius: 50%;
-            }
+#avatarsmall {
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+}
 
-          .headbar--name--wrapper{
-            display: flex;
-            align-items: center;
-          }
+.headbar--name--wrapper {
+  display: flex;
+  align-items: center;
+}
 
-            .headbar--name--wrapper > p{
-              font-size: medium;
-            }
+.headbar--name--wrapper > p {
+  font-size: medium;
+}
 
-        .headbar--buttons{
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          gap: 5px ;
-        }
-      
-          #headbarbuttons{
-            border-radius: 20px;
-            background-color: #1992D4;
-            color: white;
-            border: none;
-            height: 2rem;
-            width: 6rem;
-            font-weight: bold;
-            font-size: medium;
-          }  
-        
-    .rightside--content{
-      background-color: #E2E8F0;
-      /* box-shadow: 0px -25px 1px 1px;
+.headbar--buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+#headbarbuttons {
+  border-radius: 20px;
+  background-color: #1992d4;
+  color: white;
+  border: none;
+  height: 2rem;
+  width: 6rem;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.rightside--content {
+  background-color: #e2e8f0;
+  /* box-shadow: 0px -25px 1px 1px;
       z-index: -1; */
-    }
+}
 
-      .content--container{
-        height: 97%;
-        margin: 1rem 0px 0px 1.8rem;
-        display: grid;
-        grid-template-columns: repeat(25, 4%);
-        grid-template-rows: repeat(20, 5%);
-        grid-auto-rows: 5%;
-        grid-auto-columns:4%; 
-        overflow: auto;
-        gap: 8px;
-      }
+.content--container {
+  height: 97%;
+  margin: 1rem 0px 0px 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(25, 4%);
+  grid-template-rows: repeat(20, 5%);
+  grid-auto-rows: 5%;
+  grid-auto-columns: 4%;
+  overflow: auto;
+  gap: 8px;
+}
 
-        #content--textbox--projects{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          grid-area: 1/1/2/4;
-          font-size: large;
-          font-weight: 500;
-          /* gap: 15px; */
-        }
+#content--textbox--projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: 1/1/2/4;
+  font-size: large;
+  font-weight: 500;
+  /* gap: 15px; */
+}
 
-        #content--textbox--announcements{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          grid-area: 1/19/2/23;
-          font-size: large;
-          font-weight: 500;
-        }
-          #announcements--tab{
-            grid-area: 2/19/12/24;
-            background-color: white;
-            border-radius: 10%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-          }
+#content--textbox--announcements {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: 1/19/2/23;
+  font-size: large;
+  font-weight: 500;
+}
+#announcements--tab {
+  grid-area: 2/19/12/24;
+  background-color: white;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-          .announcements--dividers{
-              display: flex;
-              flex-direction: column;
-              justify-content: flex-start;
-              height: 33%;
-              width: 80%;
-              margin-top: 1rem;
-              padding-left: 10%;
-            }
-          
-            .announcements--dividers > h1{
-              font-weight: 600;
-            }
+.announcements--dividers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 33%;
+  width: 80%;
+  margin-top: 1rem;
+  padding-left: 10%;
+}
 
-            .announcements--dividers > p{
-              font-weight: 400;
-              font-size: medium;
-            }
+.announcements--dividers > h1 {
+  font-weight: 600;
+}
 
-        #content--textbook--trending{
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-          padding-left: 1rem;
-          grid-area: 12/19/13/23;
-          font-size: large;
-          font-weight: 500;
-        }
-          #trending--tab{
-            grid-area: 13/19/24/24;
-            background-color: white;
-            border-radius: 10%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          }
+.announcements--dividers > p {
+  font-weight: 400;
+  font-size: medium;
+}
 
+#content--textbook--trending {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  grid-area: 12/19/13/23;
+  font-size: large;
+  font-weight: 500;
+}
+#trending--tab {
+  grid-area: 13/19/24/24;
+  background-color: white;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-            .trending--tab--dividers{
-              display: flex;
-              flex-direction: row;
-              min-height: 20%;
-              width: 80%
-            }
+.trending--tab--dividers {
+  display: flex;
+  flex-direction: row;
+  min-height: 20%;
+  width: 80%;
+}
 
-              .trending--avatar--container > img{
-                height: 50px;
-                width: 50px;
-                border-radius: 50%;
-              }
+.trending--avatar--container > img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
 
-              .trending--content--container{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                justify-items: center;
-                align-items: center; 
-                align-content: center;
-                padding-left: 5%;
-              }
+.trending--content--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  padding-left: 5%;
+}
 
-                #username{
-                  font-weight: 700;
-                }
+#username {
+  font-weight: 700;
+}
 
-                #slogan{
-                  font-size: x-small;
-                }
+#slogan {
+  font-size: x-small;
+}
 
-        .card1{
-          grid-area:2/1/8/10;
-          display: flex;
-          border-radius: 20px;
-        }
+.card1 {
+  grid-area: 2/1/8/10;
+  display: flex;
+  border-radius: 20px;
+}
 
-        .card2{
-          grid-area: 2/10/8/19;
-          display: flex;
-          border-radius: 20px;
-        }
+.card2 {
+  grid-area: 2/10/8/19;
+  display: flex;
+  border-radius: 20px;
+}
 
-        .card3{
-          grid-area: 9/1/15/10;
-          display: flex;
-          border-radius: 20px;
-        }
+.card3 {
+  grid-area: 9/1/15/10;
+  display: flex;
+  border-radius: 20px;
+}
 
-        .card4{
-          grid-area: 9/10/15/19;
-          display: flex;
-          border-radius: 20px;
-        }
+.card4 {
+  grid-area: 9/10/15/19;
+  display: flex;
+  border-radius: 20px;
+}
 
-        .card5{
-          grid-area: 16/1/22/10;
-          display: flex;
-          border-radius: 20px;
-        }
+.card5 {
+  grid-area: 16/1/22/10;
+  display: flex;
+  border-radius: 20px;
+}
 
-        .card6{
-          grid-area: 16/10/22/19;
-          display: flex;
-          border-radius: 20px;
-        }
+.card6 {
+  grid-area: 16/10/22/19;
+  display: flex;
+  border-radius: 20px;
+}
 
-          .card--border{
-            background-color: orange;
-            width: 3%;
-            border-radius: 20px 0 0 20px;
-          }
+.card--border {
+  background-color: orange;
+  width: 3%;
+  border-radius: 20px 0 0 20px;
+}
 
-          .card--content{
-            display: flex;
-            flex-direction: column;
-            width: 97%;
-            background-color: white;
-          }
+.card--content {
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+  background-color: white;
+}
 
-            .divisor1{
-              display: flex;
-              align-items: center;
-              padding-left: 1rem;
-              height: 33%;
-              font-size: large;
-              font-weight: 800;
-            }
+.divisor1 {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  height: 33%;
+  font-size: large;
+  font-weight: 800;
+}
 
-            .divisor2{
-              height: 42%;
-              padding-left: 1rem;
-              font-size: small;
-            }
+.divisor2 {
+  height: 42%;
+  padding-left: 1rem;
+  font-size: small;
+}
 
-            .divisor3{
-              height: 25%;
-              display: flex;
-              flex-direction: row;
-              justify-content: flex-end;
-              gap:5px;
-            }
-      
-              .card--icon--wrapper > svg{
-                height: 30px;
-                width: 30px;
-              }
+.divisor3 {
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 5px;
+}
 
+.card--icon--wrapper > svg {
+  height: 30px;
+  width: 30px;
+}
 
-  
-  /*Right side of our page properties end*/
+/*Right side of our page properties end*/
 
 /* page container end */
